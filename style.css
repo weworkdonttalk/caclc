@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1e1e2e;
+}
+
+.calculator {
+    background-color: #2a2a3c;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    width: 320px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    background-color: #181825;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    font-size: 28px;
+    text-align: right;
+    color: #cdd6f4;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #3b3b52;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.btn:hover {
+    background-color: #4c4c69;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.operator {
+    background-color: #f38ba8;
+    color: #11111b;
+}
+
+.operator:hover {
+    background-color: #eba0ac;
+}
+
+.clear {
+    background-color: #fab387;
+    color: #11111b;
+}
+
+.clear:hover {
+    background-color: #f9e2af;
+}
+
+.equal {
+    background-color: #a6e3a1;
+    color: #11111b;
+    grid-row: span 2; /* Memanjang 2 baris ke bawah */
+}
+
+.equal:hover {
+    background-color: #94e2d5;
+}
+
+.zero {
+    grid-column: span 2; /* Memanjang 2 kolom ke samping */
+}
